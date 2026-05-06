@@ -1,15 +1,15 @@
 # Rethinking $\boldsymbol{\ell}_{2}$ Normalization: Preventing Norm Inflation in Face Recognition
 
-This website contains the source code of $\boldsymbol{\ell}_{2}$ Detached Normalization ($\boldsymbol{\ell}_{2}\mathrm{DN}$), which is proposed in the paper: **Rethinking $\boldsymbol{\ell}_{2}$ Normalization: Preventing Norm Inflation in Face Recognition**. $\boldsymbol{\ell}_{2}\mathrm{DN}$ is a replacement of $\boldsymbol{\ell}_{2}$ Normalization ($\boldsymbol{\ell}_{2}\mathrm{D}$) for constraining the consistent norm growth of class-centers (also called proxies, or prototypes) and features during training, as a huge magnitude of norms hinders the model convergence. The effect of $\boldsymbol{\ell}_{2}\mathrm{DN}$ is shown in the following figures, demonstrating that the class-center and feature norms under $\boldsymbol{\ell}_{2}\mathrm{N}$ diverge, where as those under $\boldsymbol{\ell}_{2}\mathrm{DN}$ remain much more compact. In experiments, $\boldsymbol{\ell}_{2}\mathrm{DN}$ achieves the best average accuracy under various dataset+model settings at 20 epochs, while suffering less than a 1% performance drops when training is reduced to only 5 epochs.
+This website contains the source code of *$\boldsymbol{\ell}_{2}$* Detached Normalization (*$\boldsymbol{\ell}_{2}\mathrm{DN}$*), which is proposed in the paper: **Rethinking $\boldsymbol{\ell}_{2}$ Normalization: Preventing Norm Inflation in Face Recognition**. *$\boldsymbol{\ell}_{2}\mathrm{DN}$* is a replacement of *$\boldsymbol{\ell}_{2}$* Normalization (*$\boldsymbol{\ell}_{2}\mathrm{D}$*) for constraining the consistent norm growth of class-centers (also called proxies, or prototypes) and features during training, as a huge magnitude of norms hinders the model convergence. The effect of *$\boldsymbol{\ell}_{2}\mathrm{DN}$* is shown in the following figures, demonstrating that the class-center and feature norms under *$\boldsymbol{\ell}_{2}\mathrm{N}$* diverge, where as those under *$\boldsymbol{\ell}_{2}\mathrm{DN}$* remain much more compact. In experiments, *$\boldsymbol{\ell}_{2}\mathrm{DN}$* achieves the best average accuracy under various dataset+model settings at 20 epochs, while suffering less than a 1% performance drops when training is reduced to only 5 epochs.
 
 <div style="display:flex; gap:16px; align-items:flex-start; flex-wrap:wrap;">
   <figure style="margin:0; text-align:center;">
-    <img src="figure/l2n_f.gif" alt="feature_space" style="width:390px; max-width:100%; display:block;">
+    <img src="figure/l2n_f.gif" alt="feature_space" style="width:360px; max-width:100%; display:block;">
     <figcaption>Figure 1：Feature space under L2N</figcaption>
   </figure>
 
   <figure style="margin:0; text-align:center;">
-    <img src="figure/l2dn_f.gif" alt="feature_space" style="width:390px; max-width:100%; display:block;">
+    <img src="figure/l2dn_f.gif" alt="feature_space" style="width:360px; max-width:100%; display:block;">
     <figcaption>Figure 2：Feature space under L2DN</figcaption>
   </figure>
 </div>
